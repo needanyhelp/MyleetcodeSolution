@@ -20,7 +20,7 @@ def dfsStack():
     visited=[]
     stack=[]
     
-    def reculsive(list):
+    def stackFunc(list):
 
 
         for k in list:
@@ -40,7 +40,7 @@ def dfsStack():
             
 
     
-    reculsive(adjacencyList['a'])
+    stackFunc(adjacencyList['a'])
 
 
 dfsStack()

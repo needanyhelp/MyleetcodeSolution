@@ -41,10 +41,11 @@ def solution(islands: List[List[int]])->int :
                 prevRow, prevCol = stack.pop()
                 findOne(prevRow,prevCol)
 
+    
 
     def findIslands():
-        numOfIslands=0
-
+        nonlocal numOfIslands
+         
         #find there is any other islands left
         for i in range(len(islands)):
             if 1 in islands[i]:
@@ -52,7 +53,10 @@ def solution(islands: List[List[int]])->int :
                 start= (i,islands[i].index(1))
                 findOne(start[0],start[1])
               
+
         return numOfIslands
+    
+
 
     return findIslands()
 
