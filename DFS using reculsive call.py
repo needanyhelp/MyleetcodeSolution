@@ -20,7 +20,6 @@ def dfsReculsive():
 
     def reculsive(list):
         for k in list:
-            print(k)
             if k not in visited:
                 visited.append(k)
             reculsive(adjacencyList[k])
